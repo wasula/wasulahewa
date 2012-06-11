@@ -1,12 +1,12 @@
 // Module dependencies.
 var express = require('express')
   , http = require('http')
-  , cons = require('consolidate');
+  , cons = require('consolidate')
+  , routes = require('./routes');
 
 var app = express();
 
-var conf = (require('path').existsSync( './dev_conf.js' ) && require('./dev_conf').conf) || 
-           { "port":(process.env.PORT || 8008), "base":"" };
+var conf = { "port":"", "base":"" };
 
 // assign dust engine to .dust files
 app.engine('dust', cons.dust);
@@ -19,15 +19,20 @@ app.configure(function(){
   app.use(express.static(__dirname + '/public', {redirect: false}));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(express.session({ secret: 'very_unique_secret_string',
-        cookie: { maxAge: 1800000 }}));
+  app.use(express.cookieParser('your secret here'));
+  app.use(express.session({
+    secret: "my awesome secret",
+    cookie: { maxAge: 24*60*60*1000 }
+  }));
+  
   app.use(app.router);
 });
 
-app.get('/', function( req, res ){
-	res.render( 'index', {
-		title:'Welcome to wasulahewa.com'
-	})
-})
+// Routes
 
-module.exports = app
+app.get('/', routes.index);
+
+//http.createServer(app).listen(10000, '127.0.0.1');
+console.log("Express server listening on port 127.0.0.1:10000");
+
+module.exports = app;

@@ -1,0 +1,11 @@
+{>"views/layout.dust"/}
+
+{<title}
+	{title}
+{/title}
+
+	{<body}
+		<a href="/" class="back-to-home"><h1>wasulahewa.com</h1></a>
+		<div class="contentLeft"></div>
+		<div class="contentRight"></div>
+	{/body}
