@@ -1,0 +1,15 @@
+{
+  "name": "wasulahewa",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.0.0alpha4",
+    "dustjs-linkedin": "*",
+    "consolidate": "https://github.com/sntran/consolidate.js/tarball/master",
+    "async": "~0.1.18"
+  },
+  "devDependencies": {}
+}
