@@ -1,14 +1,21 @@
 {
-  "name": "wasulahewa",
-  "version": "0.0.1",
+  "name": "wasulahewa.com",
+  "version": "0.0.1-2",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "app.js"
   },
+  "domains": [
+    "wasulahewa.com",
+    "www.wasulahewa.com"
+  ],
   "dependencies": {
     "express": "3.0.0alpha4",
     "dustjs-linkedin": "*",
-    "consolidate": "https://github.com/sntran/consolidate.js/tarball/master",
-    "async": "~0.1.18"
+    "consolidate": "https://github.com/sntran/consolidate.js/tarball/master"
+  },
+  "subdomain": "wasulahewa",
+  "engines": {
+    "node": "0.6.x"
   }
 }
