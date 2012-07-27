@@ -1,6 +1,6 @@
 {
   "name": "wasulahewa.com",
-  "version": "0.0.1-2",
+  "version": "0.0.1-4",
   "private": true,
   "scripts": {
     "start": "app.js"
@@ -10,7 +10,7 @@
     "www.wasulahewa.com"
   ],
   "dependencies": {
-    "express": "3.0.0alpha4",
+    "express": "3.x",
     "dustjs-linkedin": "*",
     "consolidate": "https://github.com/sntran/consolidate.js/tarball/master"
   },
