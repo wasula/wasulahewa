@@ -1,6 +1,6 @@
 {
   "name": "wasulahewa.com",
-  "version": "0.0.1-4",
+  "version": "0.0.1-6",
   "private": true,
   "scripts": {
     "start": "app.js"
@@ -16,6 +16,6 @@
   },
   "subdomain": "wasulahewa",
   "engines": {
-    "node": "0.6.x"
+    "node": "v0.6.x"
   }
 }
