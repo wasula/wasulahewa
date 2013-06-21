@@ -34,6 +34,8 @@ app.get('/', routes.index);
 
 //http.createServer(app).listen(10000, '127.0.0.1');
 //http.createServer(app).listen(10000, '0.0.0.0');
+var conf = { "port":(process.env.PORT || 10000), "base":"" };
+http.createServer(app).listen(conf.port);
 console.log("Express server listening on port 127.0.0.1:10000");
 
 module.exports = app;
