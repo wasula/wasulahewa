@@ -1,9 +1,8 @@
 {
   "name": "wasulahewa.com",
   "version": "0.0.1-6",
-  "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app"
   },
   "domains": [
     "wasulahewa.com",
