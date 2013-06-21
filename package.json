@@ -12,10 +12,12 @@
   "dependencies": {
     "express": "3.x",
     "dustjs-linkedin": "*",
-    "consolidate": "https://github.com/sntran/consolidate.js/tarball/master"
+    "dustjs-helpers": "*",
+    "consolidate": ""
   },
   "subdomain": "wasulahewa",
   "engines": {
-    "node": "v0.6.x"
+    "node": "0.8.x",
+    "npm":"1.8"
   }
 }

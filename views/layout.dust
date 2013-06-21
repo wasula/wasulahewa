@@ -4,7 +4,16 @@
 	  <meta charset="utf-8">
 	  <title>{+title}WasulaHewa.com{/title}</title>
 	  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-	  <script type="text/javascript">
+	</head>
+
+	<body id="page">
+		<div class="contentWrap">
+			{+body/}
+
+			<div class="clear"></div>
+		</div>
+		{+bodyScripts/}
+		<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-33619573-1']);
 		  _gaq.push(['_setDomainName', 'wasulahewa.com']);
@@ -16,15 +25,6 @@
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 		</script>
-	</head>
-
-	<body id="page">
-		<div class="contentWrap">
-			{+body/}
-
-			<div class="clear"></div>
-		</div>
-		{+bodyScripts/}
 	</body>
 
 </html>

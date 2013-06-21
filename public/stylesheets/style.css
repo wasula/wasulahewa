@@ -49,8 +49,6 @@ table {
 /* Custom css definitions */
 body {
   font: 100% "Lucida Grande", Helvetica, Arial, sans-serif;
-  background:url(../images/bg.jpg) center center;
-  background-posission: url();
 }
 
 h1{ font-size:160%; }

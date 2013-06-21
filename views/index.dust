@@ -1,4 +1,4 @@
-{>"views/layout.dust"/}
+{>"layout.dust"/}
 
 {<title}
 	{title}
