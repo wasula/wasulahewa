@@ -32,7 +32,7 @@ app.configure(function(){
 app.get('/', routes.index);
 
 
-http.createServer(app).listen(10000, '127.0.0.1');
+//http.createServer(app).listen(10000, '127.0.0.1');
 //http.createServer(app).listen(10000, '0.0.0.0');
 console.log("Express server listening on port 127.0.0.1:10000");
 
