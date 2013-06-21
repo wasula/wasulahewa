@@ -1,8 +1,8 @@
 {
-  "name": "wasulahewa.com",
-  "version": "0.0.1",
+  "name": "wasulahewa",
+  "version": "0.0.1-9",
   "scripts": {
-    "start": "node app",
+    "start": "node app.js",
   },
   "dependencies": {
     "express": "3.x",
@@ -13,8 +13,9 @@
   },
   "devDependencies": {
   },
- "engines": {
+ "subdomain": "wasulahewa",
+  "engines": {
     "node": "0.8.x",
-    "npm":  "1.x"
+    "npm": "1.x"
   }
 }
