@@ -3,11 +3,7 @@
   "version": "0.0.1-6",
   "scripts": {
     "start": "node app.js"
-  }/*,
-  "domains": [
-    "wasulahewa.com",
-    "www.wasulahewa.com"
-  ]*/,
+  },
   "dependencies": {
     "express": "3.x",
     "dustjs-linkedin": "*",
