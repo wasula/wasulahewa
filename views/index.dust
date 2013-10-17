@@ -5,7 +5,26 @@
 {/title}
 
 	{<body}
-		<a href="/" class="back-to-home"><h1>wasulahewa.com</h1></a>
-		<div class="contentLeft"></div>
-		<div class="contentRight"></div>
+	<div class="wrapper">
+	  <div class="main">
+	    
+      <section class="page1">
+        <div class="page_container">
+          <h1>Wasula Kankanamge</h1>
+  	    </div>
+      </section>
+	    
+	    <section class="page2">
+	      <div class="page_container">
+          <h1>Page 2</h1>
+	      </div>
+      </section>
+	    
+	    <section class="page3">
+	      <div class="page_container">
+          <h1>Page 3</h1>
+  	    </div>
+      </section>
+    </div>
+  </div>
 	{/body}

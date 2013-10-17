@@ -51,13 +51,44 @@ body {
   font: 100% "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-h1{ font-size:160%; }
+h1{ font-size:160%; color: #fff; }
 h2{ font-size:140%; }
 h3{ font-size:120%; }
 h4, h5{ font-size:110%; }
 
-.contentWrap{
-	width:960px;
-	margin: 0 auto;
+.wrapper {
+	height: 100% !important;
+	height: 100%;
+	margin: 0 auto; 
+	overflow: hidden;
 }
-	.back-to-home h1{ padding:10px 0 5px; text-align:center; }
+
+  .main {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+	  .main section .page_container {
+	    position: relative;
+	    top: 25%;
+	    margin: 0 auto 0;
+	    max-width: 950px;
+	    z-index: 3;
+	  }
+	    .main section  {
+	      overflow: hidden;
+	    }
+	    
+	    .main section.page1 {
+	      background:url(../images/full-moon.JPG) no-repeat;
+	      background-size:100%;
+	    }
+	    .main section.page2 {
+	      background: #555557 url(../images/ruchira-2.JPG) no-repeat center center;
+	      background-size:100%;
+	    }
+	    .main section.page3 {
+	      background:url(../images/ruchira-1.JPG) no-repeat;
+	      background-size:100%;
+	    }

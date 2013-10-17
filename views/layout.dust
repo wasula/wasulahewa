@@ -2,16 +2,15 @@
 <html>
 	<head>
 	  <meta charset="utf-8">
-	  <title>{+title}WasulaHewa.com{/title}</title>
+	  <title>{+title}Wasula Kankanamge- Freelance Web Developer {/title}</title>
 	  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	  <link href='/stylesheets/onepage-scroll.css' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body id="page">
-		<div class="contentWrap">
-			{+body/}
-
-			<div class="clear"></div>
-		</div>
+		{+body/}
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
 		{+bodyScripts/}
 		<script type="text/javascript">
 		  var _gaq = _gaq || [];
@@ -24,6 +23,13 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
+		</script>
+		<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section"
+      });
+		});
 		</script>
 	</body>
 
